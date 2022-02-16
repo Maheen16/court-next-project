@@ -1,0 +1,1024 @@
+/*Searchbar Top CSS :: START*/
+
+.topbar_search {
+    width: 50%;
+    padding-left: 30px;
+}
+
+.topbar_search input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white !important;
+    background-image: url('../img/searchicon.png') !important;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 8px 20px 8px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.trial-period-alerts,
+.trial-period-alerts-mobile
+{
+    background-color: red;
+    color: #fff;
+    padding: 5px 10px;
+}
+.trial-period-alerts-mobile
+{
+    display: none;
+}
+
+/*Searchbar Top CSS :: ENDd*/
+
+.create_case_step_one .option-box-column {
+    margin: 0 auto;
+    display: table;
+}
+
+.create_case_step_one #commentForm .nav-link {
+    padding: .5rem 10px;
+    border: 1px solid #061D3B;
+    margin: 0 5px 20px 0;
+}
+
+.create_case_step_one #commentForm .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #061D3B;
+}
+
+.create_case_step_one .option-box-column input[type=radio]:checked+label .radio-content .radio-highlight {
+    color: #fff;
+    background-color: #061D3B;
+}
+
+.create_case_step_one .bg-dark {
+    background-color: #061D3B!important;
+}
+
+.create_case_step_one .nav-item a input[type=button] {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 15px;
+    padding: 0;
+    outline-style: none;
+}
+
+.create_case_step_one .nav-item a input[type=button]:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.create_case_step_one .nav-item .nav-link.active input[type=button] {
+    color: white !important;
+}
+
+.create_case_step_one .option-box-column label .radio-content .radio-highlight {
+    padding: 20px 50px;
+}
+
+.create_case_step_one .option-box-column input[type=radio]:checked+label:before {
+    color: #061D3B;
+}
+
+.create_case_step_one .nav-link.btn-success {
+    background-color: #061D3B;
+    border-color: #061D3B;
+    box-shadow: none;
+    outline-style: none;
+}
+
+.create_case_step_one .btn-success:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgb(6, 29, 59);
+}
+
+.create_case_step_one .btn-success:not(:disabled):not(.disabled):active {
+    background-color: #061D3B;
+    border-color: #061D3B;
+}
+
+.create_case_step_one .radio-content {
+    padding-top: 10px;
+}
+
+/*Select Type of Case Page CSS :: START*/
+
+#case__information .submit_button,
+.create__calender__event .custom_button_color {
+    background-color: #061D3B;
+    border-color: transparent;
+    padding: 9px 25px;
+    color: white;
+}
+
+#case__information .submit_button:focus {
+    box-shadow: none;
+}
+
+#case__information .add_button {
+    outline-style: none;
+    border: none;
+    color: white !important;
+    background-color: #061D3B !important;
+    float: right;
+    margin-bottom: 5px;
+}
+
+#case__information .add_button:focus {
+    box-shadow: none;
+}
+
+#case__information .back_button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 5px;
+}
+
+.create_case_step_one #commentForm .next_button {
+    margin: 0 auto;
+}
+
+.create_case_step_one #commentForm .next_button a {
+    padding: 9px 25px;
+}
+
+.add_paralegal_btn {
+    background-color: #061D3B;
+    border-color: transparent;
+    padding: 5px 10px;
+    color: white;
+}
+
+.add_paralegal_btn:hover {
+    color: white;
+}
+
+.add_paralegal_btn:focus {
+    box-shadow: none;
+}
+
+.case_step_two .datepicker thead tr .dow,
+.case_step_two .datepicker thead tr .next,
+.datepicker thead tr .prev,
+.case_step_two .datepicker thead tr .next:before,
+.datepicker thead tr .prev:before {
+    color: #061D3B;
+}
+
+.case_step_two .datepicker table tr td.today {
+    /* background-color: #061D3B;
+    color: white !important; */
+    outline-width: 1px !important;
+    outline-style: auto !important;
+    outline-offset: -2px !important;
+    outline-color: #061D3B !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.case_step_two .datepicker table tr td.active {
+    background-color: #061d3b8c !important;
+}
+
+.case_step_two .datepicker thead tr .datepicker-switch {
+    color: #061D3B;
+    font-weight: 600;
+}
+
+.case_step_two .datepicker table tr td.day {
+    color: #061D3B;
+    font-weight: 600;
+    outline-width: 0.3px;
+    outline-style: auto;
+    outline-offset: -1px;
+    outline-color: #80808052;
+}
+
+.case_step_two .datepicker table tr td.old,
+.case_step_two .datepicker table tr td.new {
+    color: #061d3b87;
+    color: #3788DA;
+    /* border: none; */
+    outline-style: none;
+    /* background-color: #80808054; */
+}
+
+
+/* .case_step_two .datepicker table tr td span.active */
+
+.case_step_two .datepicker table tr td span.focused,
+.case_step_two .datepicker table tr td span:hover {
+    background-color: #061D3B;
+    color: white;
+}
+
+.case_step_two .today.available {
+    color: #061D3B !important;
+    outline-width: 1px !important;
+    outline-style: auto !important;
+    outline-offset: -3px !important;
+    outline-color: #061D3B !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.case_step_two .table-condensed .today {
+    background-color: #061d3b21 !important;
+    color: #061d3b;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.case_step_two .available {
+    color: #061D3B;
+    font-weight: 600;
+    outline-width: 0.3px;
+    outline-style: auto;
+    outline-offset: -1px;
+    outline-color: #80808052;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.case_step_two .table-condensed .active {
+    background-color: #061D3B !important;
+    border: 0px !important;
+    color: #fff !important;
+}
+
+.case_step_two .off.available {
+    font-weight: 600;
+    padding: 5px 10px;
+    color: #061d3b87;
+    color: #3788DA !important;
+    /* border: none; */
+    outline-style: none;
+    /* background-color: #80808054; */
+}
+
+.case_step_two .applyBtn {
+    background-color: #061D3B !important;
+}
+
+.case_step_two .applyBtn:focus,
+.case_step_two .applyBtn:active {
+    box-shadow: none !important;
+}
+
+
+/*Select Type of Case Page CSS :: END*/
+
+
+/*Sidebar CSS :: START*/
+
+.admin-sidebar-wrapper .menu .menu-item .menu-link .menu-label {
+    color: #061D3B;
+}
+
+.admin-sidebar-wrapper .menu .menu-item.active>.menu-link .menu-label,
+.admin-sidebar-wrapper .menu .menu-item.active>.menu-link .icon-placeholder {
+    color: #3788DA;
+}
+
+.admin-sidebar-wrapper .menu .menu-item>.menu-link:hover .menu-label,
+.admin-sidebar-wrapper .menu .menu-item>.menu-link:hover .icon-placeholder,
+.admin-sidebar-wrapper .menu .menu-item.opened>.menu-link .menu-label,
+.admin-sidebar-wrapper .menu .menu-item.opened>.menu-link .icon-placeholder {
+    color: #3788DA;
+}
+
+
+/*Sidebar CSS :: END*/
+
+textarea.autoExpand {
+    overflow: hidden;
+}
+
+.icon-placeholder.mdi-file-account {
+    font-size: 20px;
+}
+
+.create_case_step_one .form_error {
+    text-align: center;
+}
+
+.form_error {
+    color: red;
+    margin-top: 5px;
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+
+/*Billing Information Page CSS :: START*/
+
+.billing_information .case_billable_tab,
+.billing_information .case_billable_tab .card .card-body {
+    padding: 0;
+}
+
+.billing_information .case_billable_tab .card {
+    box-shadow: none;
+}
+
+.billing_information .case_billable_tab .card .card-body .nav-tabs .nav-link {
+    border: 1px solid #061D3B;
+    margin-right: 5px;
+}
+
+.billing_information .case_billable_tab .card .card-body .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #061D3B;
+}
+
+#flat-rate .select2-container,
+#contingency-fee .select2-container {
+    width: 100% !important;
+}
+
+.case_billable_tab {
+    display: none;
+}
+
+
+/*Billing Information Page CSS :: END*/
+
+
+/*My Cases Page CSS :: END*/
+
+#case_list_table_length {
+    position: absolute;
+}
+
+.my_cases #case_list_table_wrapper .toolbar {
+    float: left;
+    position: relative;
+    top: 0;
+    left: 155px;
+}
+
+button.custom_btn_table {
+    background-color: transparent;
+    color: black;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #061D3B;
+    padding: 3px 10px;
+    margin-right: 10px;
+}
+
+button.custom_btn_table.active {
+    background-color: #061D3B;
+    color: white;
+}
+
+.my_cases .table th,
+.my_cases .table td {
+    padding: 10px 10px;
+}
+
+.my_cases .table thead th,
+.my_cases .table tfoot th {
+    font-weight: 400;
+    color: white;
+    background-color: #061d3b;
+}
+
+.my_cases .page-item.active .page-link {
+    background-color: #061d3b;
+    border-color: #061d3b;
+    color: white;
+}
+
+.my_cases .page-link,
+.my_cases .page-link:hover {
+    color: #061d3b;
+}
+
+.my_cases .page-link:focus {
+    box-shadow: none;
+}
+
+.my_cases td.sorting_1 {
+    background-color: rgb(6 29 59 / 20%);
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: #061d3b;
+    border-color: #061d3b;
+}
+
+
+/*My Cases Page CSS :: END*/
+
+
+/*Calender Active Class Dotted CSS :: START*/
+
+.activeVideoMarker,
+.activeCaseMarker,
+.activeAudioMarker {
+    position: relative;
+    /* display: inline-block;
+  vertical-align: top;
+  padding-bottom: 10px;
+  text-align: center;
+ padding: 20px 10px;
+  line-height: 24px;
+  min-width: 100px;
+  background: #333;
+  font-size: 20px;
+  color: #fff; */
+}
+
+.activeVideoMarker::before,
+.activeCaseMarker::before,
+.activeAudioMarker::before {
+    content: '';
+    transform: translateX(-50%);
+    border-radius: 100%;
+    position: absolute;
+    background-image: url(../img/blue.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    left: 50%;
+    bottom: -4.7px;
+}
+
+.activeAudioMarker::before {
+    background-image: url(../img/green.png);
+}
+
+.activeCaseMarker::before {
+    background-image: url(../img/red.png);
+}
+
+.activeVideoMarker.activeCaseMarker::before {
+    background-image: url(../img/blue-green.png);
+}
+
+.activeVideoMarker.activeAudioMarker::before {
+    background-image: url(../img/blue-red.png);
+}
+
+.activeCaseMarker.activeAudioMarker::before {
+    background-image: url(../img/green-red.png);
+}
+
+.activeCaseMarker.activeVideoMarker.activeAudioMarker::before {
+    background-image: url(../img/red-green-blue.png);
+}
+
+
+/*Calender Active Class Dotted CSS :: END*/
+
+.case_list_table tbody tr td:nth-child(8) {
+    display: flex;
+}
+
+.task_buttons br {
+    display: none;
+}
+
+#case__information .submit_button.cancel_button {
+    background-color: #95AAC9;
+}
+
+
+/*Create Calender Event Page CSS :: START*/
+
+.create__calender__event .fc-day-grid-event .fc-time,
+.create__calender__event .fc-day-grid-event .fc-title {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.create__calender__event #calendar .fc-prev-button,
+.create__calender__event #calendar .fc-next-button,
+.create__calender__event #calendar .fc-right .btn-group button {
+    border-color: #061D3B;
+    background-color: transparent;
+    color: #061D3B;
+    box-shadow: none;
+}
+
+.create__calender__event #calendar .fc-prev-button:hover,
+.create__calender__event #calendar .fc-next-button:hover,
+.create__calender__event #calendar .fc-right .btn-group button.active {
+    background-color: #061D3B;
+    color: white;
+}
+
+.create__calender__event #calendar .fc-right .btn-group button.active:focus {
+    box-shadow: none;
+}
+
+.create__calender__event #calendar .fc-today {
+    background-color: #061d3b21;
+    color: #061d3b;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.create__calender__event .add_button
+{
+    outline-style: none;
+    border: none;
+    color: white !important;
+    background-color: #061D3B !important;
+    float: right;
+    margin-bottom: 5px;
+}
+.event-attendees-popup
+{
+    background-color: #00000075;
+}
+.event-attendees-popup h5.modal-title
+{
+    width: 90%;
+}
+.create__calender__event #calendar .fc-other-month.fc-future {
+    border: none;
+}
+
+#createeventmodalpopup .modal-body .select2.select2-container {
+    width: 100% !important;
+}
+
+.create__calender__event .available {
+    color: #061D3B;
+    font-weight: 600;
+    outline-width: 0.3px;
+    outline-style: auto;
+    outline-offset: -1px;
+    outline-color: #80808052;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.create__calender__event .off.available {
+    font-weight: 600;
+    padding: 5px 10px;
+    color: #061d3b87;
+    color: #3788DA !important;
+    /* border: none; */
+    outline-style: none;
+    /* background-color: #80808054;*/
+}
+
+.create__calender__event .today.available {
+    color: #061D3B !important;
+    outline-width: 1px !important;
+    outline-style: auto !important;
+    outline-offset: -3px !important;
+    outline-color: #061D3B !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.create__calender__event .table-condensed .active {
+    background-color: #061D3B !important;
+    border: 0px !important;
+    color: #fff !important;
+}
+
+.create__calender__event .page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    border-color: #061D3B;
+    background-color: #061D3B;
+}
+
+.create__calender__event .page-link,
+.create__calender__event .page-item.disabled .page-link {
+    color: #061D3B;
+    border-color: #061D3B;
+}
+
+.create__calender__event .fc-time-grid-event.fc-short .fc-time,
+.create__calender__event .fc-time-grid-event.fc-short .fc-title,
+.create__calender__event .fc-time-grid-event .fc-time {
+    font-size: 14px;
+}
+
+.create__calender__event #calendar .fc-day-header {
+    font-size: 17px;
+}
+
+#calendar .more-event {
+    color: #000A3C;
+    background-color: transparent;
+    border: none
+}
+
+
+/*Create Calender Event Page CSS :: END*/
+
+
+/*Single Note View CSS :: START*/
+
+.single_note_view .edit__button,
+.single_note_view .edit__button:active {
+    background-color: #061D3B !important;
+    box-shadow: none !important;
+    outline-style: none;
+    border-color: transparent !important;
+    border: 1px solid #061D3B;
+    line-height: 1;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+
+.single_note_view .send_email {
+    background-color: #061D3B;
+    box-shadow: none;
+    outline-style: none;
+    border-color: transparent;
+}
+
+
+/*Single Note View CSS :: END*/
+
+
+/*File Page CSS :: START*/
+
+.file-upload-button,
+#FileSearch {
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+}
+
+.file-upload-button label {
+    margin-right: 15px;
+}
+
+.upload-btn,
+.create-event-btn {
+    text-align: center;
+    vertical-align: middle;
+    color: #2e384d;
+    border: none;
+    border-radius: 0.25rem;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 17px;
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 5px 10px;
+}
+
+.add-subfolder-name {
+    color: #000;
+}
+
+.add-subfolder-name .btn-add-name,
+.open-btn {
+    color: #fff !important;
+    background-color: #061D3B !important;
+}
+
+.file-show .card,
+.file-show .card .card-img-top {
+    min-height: 20vh;
+    height: auto;
+}
+
+.file-show .card .card-img-top {
+    object-fit: cover;
+    height: 20vh;
+}
+
+.mdi-size {
+    font-size: 62px;
+}
+
+#FileSearch {
+    background-color: rgba(179, 179, 179, 0.15);
+    color: #fff;
+    border: none;
+}
+
+#FileSearch::placeholder {
+    color: #fff;
+}
+
+#btnContainer .btn {
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    color: #2e384d;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    font-size: 17px;
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 5px 10px;
+}
+
+#btnContainer .btn:hover {
+    background-color: #ddd;
+}
+
+#btnContainer .btn.active {
+    background-color: rgba(179, 179, 179, 0.15);
+    color: white;
+}
+
+#file-list-view_wrapper .page-item.active .page-link {
+    background-color: #061d3b;
+    border-color: #061d3b;
+    color: white;
+}
+
+#file-list-view_wrapper .page-link:focus {
+    box-shadow: none;
+}
+
+#share-file-modal-body .select2-container,
+#share-file-grid-modal-body .select2-container,
+#translate_file_grid_view-modal-body .select2-container,
+#translate_file_list_view-modal-body .select2-container
+{
+    width: 100% !important;
+}
+
+#share-file-modal-body label {
+    text-align: left;
+}
+
+.delete-share-button {
+    background-color: #061D3B;
+    color: white;
+    cursor: default;
+}
+
+.delete-share-button:hover {
+    background-color: #061D3B;
+    color: white;
+}
+
+.delete-share-button:focus {
+    box-shadow: none;
+}
+.share-permission-table
+{
+    border-collapse: collapse;
+    width: 100%;
+    max-height:250px;
+    overflow-y:scroll;
+}
+
+.share-permission-table td,
+.share-permission-table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    
+  }
+  
+  .share-permission-table tr:nth-child(even) {
+    background-color: #e3ebf6;
+  }
+button.save-btn,
+button.view-btn,
+button.approve-button
+{
+    background-color: #061D3B;
+    border-color: transparent;
+    padding: 6px 20px;
+    color: white;
+}
+button.view-btn,
+button.approve-button
+{
+    padding: 3px 10px;
+}
+button.approve-button
+{
+    background-color: green;
+}
+button.view-btn i,
+button.approve-button i
+{
+    font-size: 15px;
+}
+button.save-btn:hover,
+button.view-btn:hover,
+button.view-btn:focus
+{
+    background-color: #061D3B;
+    border-color: #061D3B;
+    color: #fff;
+    box-shadow: none;
+}
+button.approve-button:hover i
+{
+    color: #fff;
+}
+button.view-btn:active
+{
+    background-color: #061D3B !important;
+    border-color: #061D3B !important;
+    color: #fff !important;
+    box-shadow: none !important; 
+}
+.user-list
+{
+    position: relative;
+    overflow: auto;
+    max-height: 35vh;
+    width: 100%;
+}
+.wrap {
+    width: 100%;
+}
+
+.wrap table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.inner_table table tr td {
+    padding: 5px;
+    border: 1px solid #eee;
+    width: 100px;
+    word-wrap: break-word;
+}
+
+table.head tr td {
+    background: #eee;
+}
+
+.inner_table {
+    height: 130px;
+    overflow-y: auto;
+}
+.inner_table tbody tr td:nth-child(1)
+{
+    width: 65%;
+}
+
+.inner_table tbody tr td:nth-child(2)
+{
+    width: 35%;
+}
+/*File Page CSS :: END*/
+
+
+/*View Log Page CSS :: START*/
+
+#log-table thead tr:eq(1) .sorting_disabled {
+    display: none;
+}
+
+#log-table_length {
+    position: absolute;
+}
+
+#log-table_wrapper .toolbar {
+    float: left;
+    position: relative;
+    top: 0;
+    left: 155px;
+}
+
+#log-table_wrapper .custom_btn_pdf_table {
+    background-color: #061D3B;
+    color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #061D3B;
+    padding: 3px 10px;
+    margin-right: 10px;
+}
+
+.save_profile_button
+{
+    background-color: #061D3B;
+    border-color: transparent;
+    padding: 9px 25px;
+    color: white;
+}
+.save_profile_button:hover
+{
+    color: white;
+}
+/*View Log Page CSS :: END*/
+
+
+
+/*Consolidated Case Details View Page CSS :: START*/
+
+.consolidated-case-details-view .avatar-xs
+{
+    float: right;
+}
+.consolidated-case-details-view .card
+{
+    width: 100%;
+}
+.consolidated-case-details-view .card .list-group-item p
+{
+    margin-bottom: 5px;
+}
+.consolidated-case-details-view  .event-card .list-group-item p:nth-child(2)
+{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.consolidated-case-details-view .card .card-button-bottom
+{
+    flex: 2px;
+    padding: 0.75rem 1.25rem;
+    display: flex;  
+    align-items: flex-end;
+    justify-content: left;
+}
+.consolidated-case-details-view .card .card-button-bottom a,
+.consolidated-case-details-view .card .card-button-bottom a:active
+{
+    color: #fff;
+    border-color: transparent;
+    background-color: #061D3B;
+}
+.consolidated-case-details-view .card .card-button-bottom a:focus
+{
+
+    box-shadow: none !important;
+}
+/*Consolidated Case Details View Page CSS :: END*/
+
+
+
+/*View All Users Page CSS :: START*/
+
+.view-all-users button
+{
+    margin-bottom: 0;
+}
+/*View All Users Page CSS :: END*/
+
+
+/*Dashboardd Page CSS :: START*/
+
+/* #task-table th,
+#task-table td,
+#calender-event-table th,
+#calender-event-table td,
+#notes-table th,
+#notes-table td
+{
+    padding:13px 5px;
+    text-transform: capitalize;
+} */
+.view-btn-bottom
+{
+    flex: 2px;
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+}
+
+/*Dashboardd Page CSS :: END*/
+/* invoice page css :: start */
+
+#datepicker > input:hover
+{
+    cursor: pointer;
+}
+.invoice-card
+{
+    padding: 20px;
+}
+.pull-right 
+{
+    width: 100% !important;
+}
+.border  {
+    border-bottom: 1px solid red !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+.case_billable_tab {
+    display: block;
+}
+/* invoice page css :: end */

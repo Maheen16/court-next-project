@@ -1,0 +1,63 @@
+@media (max-width: 991px) {
+    .all_task #case_list_table_length {
+        position: unset;
+    }
+    .all_task #case_list_table_wrapper .toolbar {
+        left: 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .topbar_search {
+        width: 45%;
+        padding-left: 5px;
+    }
+    .trial-period-alerts {
+        display: none;
+    }
+    .trial-period-alerts-mobile
+    {
+        display: block;
+    }
+    .nav-link {
+        padding: .5rem 10px;
+    }
+    #case_list_table_length {
+        position: unset;
+    }
+    .my_cases #case_list_table_wrapper .toolbar {
+        left: 0;
+        margin: 0 auto;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .Step__four .case_billable_tab .card .card-body .nav-tabs .nav-link {
+        margin-bottom: 10px;
+    }
+    .task_buttons br {
+        display: block;
+    }
+    .all_task button.custom_btn_table {
+        margin-top: 10px;
+    }
+    #btnContainer .btn {
+        margin-top: 10px;
+    }
+    .tab-nav  {
+        display: unset; 
+      
+    }
+}
+
+@media (min-width: 310px) and (max-width: 350px) {
+    .topbar_search {
+        width: 40% !important;
+        padding-left: 5px;
+    }
+    .nav-link {
+        padding: .5rem 10px;
+    }
+}

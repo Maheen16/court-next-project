@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-touch-fullscreen" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <title>Generate New Invoice | CourtNext</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+        <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
+        <link rel="stylesheet" href="assets/vendor/pace/pace.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/jquery-scrollbar/jquery.scrollbar.css">
+        <link rel="stylesheet" href="assets/vendor/jquery-ui/jquery-ui.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,600">
+        <!--Material Icons-->
+        <link rel="stylesheet" type="text/css" href="assets/fonts/materialdesignicons/materialdesignicons.min.css">
+        <!-- page specific styles -->
+        <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+        <link rel="stylesheet" href="assets/vendor/select2/css/select2.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/cn.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    </head>
+    <!--body with default sidebar pinned -->
+    <body class="sidebar-pinned case_step_two">
+        <!--sidebar Begins-->
+        <aside class="admin-sidebar">
+            <div class="admin-sidebar-brand">
+                <!-- begin sidebar branding-->
+                <img class="admin-brand-logo" src="assets/img/logo.png" width="160" height="auto" alt="Logo">
+                <!-- end sidebar branding-->
+                <div class="ml-auto">
+                    <!-- sidebar pin-->
+                    <a href="#" class="admin-pin-sidebar btn-ghost btn btn-rounded-circle"></a>
+                    <!-- sidebar close for mobile device-->
+                    <a href="#" class="admin-close-sidebar"></a>
+                </div>
+            </div>
+            <div class="admin-sidebar-wrapper js-scrollbar">
+                <!-- Menu List Begins-->
+                <ul class="menu">
+                    <li class="nav-item trial-period-alerts-mobile">
+                        <span>7 Days Trial Left</span>
+                    </li>
+                    <!--list item begins-->
+                    <li class="menu-item">
+                        <a href="dashboard.html" class="menu-link">
+                        <span class="menu-label"><span class="menu-name">Dashboard</span></span>
+                        <span class="menu-icon">
+                        <i class="icon-placeholder mdi mdi-view-dashboard"></i>
+                        </span>
+                        </a>
+                    </li>
+                    <!--list item ends-->
+                    <!--list item begins-->
+                    <li class="menu-item">
+                        <a href="create-case-step-1.html" class="open-dropdown menu-link ">
+                        <span class="menu-label">
+                        <span class="menu-name">My Cases<span class="menu-arrow"></span></span>
+                        </span>
+                        <span class="menu-icon">
+                        <i class="icon-placeholder mdi mdi-briefcase"></i>
+                        </span>
+                        </a>
+                        <!--submenu-->
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="create-case-step-1.html" class=" menu-link">
+                                <span class="menu-label">
+                                <span class="menu-name">Add New Cases</span>
+                                </span>
+                                <span class="menu-icon">
+                                <i class="icon-placeholder mdi mdi-plus-box-outline"></i>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="view-all-cases.html" class=" menu-link">
+                                <span class="menu-label">
+                                <span class="menu-name">View All Cases</span>
+                                </span>
+                                <span class="menu-icon">
+                                <i class="icon-placeholder mdi mdi-eye"></i>
+                                </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--list item ends-->
+                    <!--list item begins-->
+                    <li class="menu-item">
+                        <a href="create-calender-event.html" class="open-dropdown menu-link ">
+                        <span class="menu-label">
+                        <span class="menu-name">Calendar<span class="menu-arrow"></span></span>
+                        </span>
+                        <span class="menu-icon">
+                        <i class="icon-placeholder mdi mdi-calendar"></i>
+                        </span>
+                        </a>
+                        <!--submenu-->
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="create-calender-event.html" class=" menu-link">
+                                <span class="menu-label">
+                                <span class="menu-name">Create Event</span>
+                                </span>
+                                <span class="menu-icon">
+                                <i class="icon-placeholder mdi mdi-plus-box-outline"></i>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="calender-view.html" class=" menu-link">
+                                <span class="menu-label">
+                                <span class="menu-name">View Calender</span>
+                                </span>
+                                <span class="menu-icon">
+                                <i class="icon-placeholder mdi mdi-eye"></i>
+                                </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--list item ends-->
+                    <!--list item begins-->
+                    <li class="menu-item">
+                        <a href="view-all-log.html" class="open-dropdown menu-link">
+                        <span class="menu-label">
+                        <span class="menu-name">Logs<span class="menu-arrow"></span></span>
+                        </span>
+                        <span class="menu-icon">
+                        <i class="icon-placeholder mdi mdi-clock-alert"></i>
+                        </span>
+                        </a>
+                        <!--submenu-->
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="view-all-log.html" class=" menu-link">
+                                <span class="menu-label">
+                                <span class="menu-name">View All Logs</span>
+                                </span>
+                                <span class="menu-icon">
+                                <i class="icon-placeholder mdi mdi-eye"></i>
+                                </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--list item ends-->
+                    <!--list item begins-->
+                    <li class="menu-item active opened">
+                        <a href="add-notes.html" class="open-dropdown menu-link">
+                        <span class="menu-label">
+                        <span class="menu-name">Notes<span class="menu-arrow"></span></span>
+                        </span>
+                        <span class="menu-icon">
+                        <i class="icon-placeholder mdi mdi-bookmark-outline"></i>
+                        </span>
+                        </a>
+                        <!--submenu-->
+                        <ul class="sub-menu" style="display: block;">
+                            <li class="menu-item active">
+                                <a href="add-notes.html" class=" menu-link">
+                                <span class="menu-label">
+                                <span class="menu-name">Add New Notes</span>
+                                </span>
+                                <span class="menu-icon">
+                                <i class="icon-placeholder mdi mdi-plus-box-outline"></i>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="view-all-note.html" class=" menu-link">
+                                <span class="menu-label">
+                                <span class="menu-name">View All Notes</span>
+                                </span>
+                                <span class="menu-icon">
+                                <i class="icon-placeholder mdi mdi-eye"></i>
+                                </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--list item ends-->
+                    <!--list item begins-->
+                    <li class="menu-item">
+                        <a href="document-management-list-view.html" class="menu-link">
+                        <span class="menu-label"><span class="menu-name">Documents</span></span>
+                        <span class="menu-icon">
+                        <i class="icon-placeholder mdi mdi-file-document"></i>
+                        </span>
+                        </a>
+                    </li>
+                    <!--list item ends-->
+                    <!--list item begins-->
+                    <li class="menu-item">
+                        <a href="add-task.html" class="open-dropdown menu-link">
+                        <span class="menu-label">
+                        <span class="menu-name">Tasks<span class="menu-arrow"></span></span>
+                        </span>
+                        <span class="menu-icon">
+                        <i class="icon-placeholder mdi mdi-checkbox-marked-outline"></i>
+                        </span>
+                        </a>
+                        <!--submenu-->
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="add-task.html" class=" menu-link">
+                                <span class="menu-label">
+                                <span class="menu-name">Add New Tasks</span>
+                                </span>
+                                <span class="menu-icon">
+                                <i class="icon-placeholder mdi mdi-plus-box-outline"></i>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="view-all-task.html" class=" menu-link">
+                                <span class="menu-label">
+                                <span class="menu-name">View All Tasks</span>
+                                </span>
+                                <span class="menu-icon">
+                                <i class="icon-placeholder mdi mdi-eye"></i>
+                                </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Menu List Ends-->
+            </div>
+        </aside>
+        <!--sidebar Ends-->
+        <main class="admin-main">
+            <!--site header begins-->
+            <header class="admin-header">
+                <a href="#" class="sidebar-toggle" data-toggleclass="sidebar-open" data-target="body"> </a>
+                <nav class=" mr-auto topbar_search">
+                    <form>
+                        <input type="text" name="search" placeholder="Find a case, Pre-Trial, File...">
+                    </form>
+                </nav>
+                <nav class=" ml-auto">
+                    <ul class="nav align-items-center">
+                        <li class="nav-item trial-period-alerts">
+                            <span>7 Days Trial Left</span>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                <i class="mdi mdi-24px mdi-bell-outline"></i>
+                                <span class="notification-counter"></span>
+                                </a>
+                                <div class="dropdown-menu notification-container dropdown-menu-right">
+                                    <div class="d-flex p-all-15 bg-white justify-content-between border-bottom">
+                                        <a href="#!" class="mdi mdi-18px mdi-settings text-muted"></a>
+                                        <span class="h5 m-0">Notifications</span>
+                                        <a href="#" class="mdi mdi-18px mdi-notification-clear-all text-muted"></a>
+                                    </div>
+                                    <div class="notification-events bg-gray-300">
+                                        <div class="text-overline m-b-5">today</div>
+                                        <a href="#" class="d-block m-b-10">
+                                            <div class="card">
+                                                <div class="card-body"> <i class="mdi mdi-circle text-success"></i> All
+                                                    systems operational.
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="d-block m-b-10">
+                                            <div class="card">
+                                                <div class="card-body"> <i class="mdi mdi-upload-multiple"></i> File upload
+                                                    successful.
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="d-block m-b-10">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <i class="mdi mdi-cancel text-danger"></i> Your holiday has been denied
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <div class="avatar avatar-sm avatar-online">
+                                    <span class="avatar-title rounded-circle bg-dark">V</span>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu  dropdown-menu-right">
+                                <a class="dropdown-item" href="#"> Add Account</a>
+                                <a class="dropdown-item" href="#"> Reset Password</a>
+                                <a class="dropdown-item" href="#"> Help </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!--site header ends -->
+            <section class="admin-content">
+                <!-- BEGIN PlACE PAGE CONTENT HERE -->
+                <!--  container or container-fluid as per your need -->
+                <div class="bg-dark">
+                    <div class="container-fluid m-b-30">
+                        <div class="row">
+                            <div class="col-12 text-white p-t-30 p-b-50">
+                                <h5 class="m-b-20">
+                                    <span class="btn btn-white-translucent">
+                                    <i class="icon-placeholder mdi mdi-file-account"></i>
+                                    </span>
+                                    Generate New Invoice
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container-fluid pull-up" id="invoice__information">
+                <div class="row">
+                    <div class="col-12">
+                        <!--widget card begin-->
+                        <div class="card m-b-30">
+                            <div class="card-header">
+                                <h5 class="m-b-0">
+                                    Generate Invoice
+                                </h5>
+                                <form class="mt-3">
+                                    <div class="form-group ">
+                                        <div class="row">
+                                            <div class="col-lg-6 d-flex">
+                                                <div class="col-3">
+                                                    <label>Invoice No. <span style="color:red;">*</span></label>
+                                                </div>
+                                                <div class="col-3">
+                                                    <input type="number" class="form-control" id="exampleInputnumber1"
+                                                        placeholder="" disabled>
+                                                </div>
+                                                <div class="col-3">
+                                                    <input type="number" class="form-control" id="exampleInputnumber2"
+                                                        placeholder="" disabled>
+                                                </div>
+                                                <div class="col-3">
+                                                    <input type="number" class="form-control" id="exampleInputnumber3"
+                                                        placeholder="" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <div class="row">
+                                            <div class="col-lg-6 d-flex">
+                                                <div class="col-3">
+                                                    <label>Invoice Date <span style="color:red;">*</span></label>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div id="datepicker" class="input-group date"
+                                                        data-date-format="mm-dd-yyyy">
+                                                        <input class="form-control" type="text" />
+                                                        <span class="input-group-addon"><i
+                                                            class="glyphicon glyphicon-calendar"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <div class="row">
+                                            <div class="col-lg-6 d-flex">
+                                                <div class="col-3">
+                                                    <label>Due Date <span style="color:red;">*</span></label>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div id="datepicker2" class="input-group date"
+                                                        data-date-format="mm-dd-yyyy">
+                                                        <input class="form-control" type="text" />
+                                                        <span class="input-group-addon"><i
+                                                            class="glyphicon glyphicon-calendar"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6"> </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-body ">
+                                <div class="row">
+                                    <div class="col-lg-6 ">
+                                        <div class="card invoice-card">
+                                            <h5 class="m-b-0">
+                                                Billed By
+                                            </h5>
+                                            <form class="mt-3">
+                                                <div class="form-group ">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <label>Name<span style="color:red;">*</span></label>
+                                                            <input type="name" class="form-control" id="exampleInputemail1"
+                                                                placeholder="">
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <label>E-mail<span style="color:red;">*</span></label>
+                                                            <input type="email" class="form-control" id="exampleInputemail1"
+                                                                placeholder="">
+                                                        </div>
+                                                        <div class="col-6 ">
+                                                            <label class="mt-3">Country Code <span style="color:red;">*</span></label>
+                                                            <select id="dependent_list1" class="form-control">
+                                                                <option>+91 </option>
+                                                                <option>+92 </option>
+                                                                <option>+93 </option>
+                                                                <option>+94 </option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6 ">
+                                                            <label class="mt-3">Phone no.<span style="color:red;">*</span></label>
+                                                            <input type="email" class="form-control" id="exampleInputemail1"
+                                                                placeholder="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <label>Address<span style="color:red;">*</span></label>
+                                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                                rows="3"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 ">
+                                        <div class="card invoice-card">
+                                            <h5 class="m-b-0">
+                                                Billed To
+                                            </h5>
+                                            <form class="mt-3">
+                                                <div class="form-group ">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <label>Name<span style="color:red;">*</span></label>
+                                                            <input type="name" class="form-control" id="exampleInputemail1"
+                                                                placeholder="">
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <label>E-mail<span style="color:red;">*</span></label>
+                                                            <input type="email" class="form-control" id="exampleInputemail1"
+                                                                placeholder="">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label class="mt-3">Country code <span style="color:red;">*</span></label>
+                                                            <select id="dependent_list2" class="form-control">
+                                                                <option>+91 </option>
+                                                                <option>+92 </option>
+                                                                <option>+93 </option>
+                                                                <option>+94 </option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label class="mt-3">Phone no.<span style="color:red;">*</span></label>
+                                                            <input type="email" class="form-control" id="exampleInputemail1"
+                                                                placeholder="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <label>Address<span style="color:red;">*</span></label>
+                                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                                rows="3"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <section>
+                                    <div class="mt-3">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label>Choose Rate <span style="color:red;">*</span></label>
+                                                <select id="dependent_list3" class="form-control">
+                                                    <option>+91 </option>
+                                                    <option>+92 </option>
+                                                    <option>+93 </option>
+                                                    <option>+94 </option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6">
+                                                <label>Choose Currency<span style="color:red;">*</span></label>
+                                                <select id="dependent_list4" class="form-control">
+                                                    <option>+91 </option>
+                                                    <option>+92 </option>
+                                                    <option>+93 </option>
+                                                    <option>+94 </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </section> -->
+                                <!-- <section>
+                                    <div class=" mt-3">
+                                        <div class="row clearfix">
+                                            <div class="col-md-12">
+                                                <table class="table table-responsive table-bordered table-hover" id="tab_logic">
+                                                    <thead>
+                                                        <tr>
+                                                            <th width="25%" class="text-dark text-center" scope="col">Description</th>
+                                                            <th width="25%" class="text-dark text-center" scope="col">Number of Hours</th>
+                                                            <th width="25%" class="text-dark text-center" scope="col">Rate per Hour</th>
+                                                            <th width="25%" class="text-dark text-center"> Total </th>
+                                                            <th  class="text-dark" scope="col">#</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id='addr0'>
+                                                        <tr id='addr0' >
+                                                            <td><input type="text" name='product[]'  placeholder='Enter Product Name' class="form-control"/></td>
+                                                            <td><input type="number" name='qty[]' placeholder='Enter Qty' class="form-control qty" step="0" min="0"/></td>
+                                                            <td><input type="number" name='price[]' placeholder='Enter Unit Price' class="form-control price" step="0.00" min="0"/></td>
+                                                            <td><input type="number" name='total[]' placeholder='0.00' class="form-control total" readonly/></td>
+                                                            <td><i style="font-size: 25px; color: red;" class="icon-placeholder mdi mdi-file-excel-box delete_row"></i></td>
+                                                        </tr>
+                                                        <tr id='addr1'></tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="row clearfix">
+                                            <div class="col-md-12">
+                                                <button id="add_row" class="btn btn-default pull-left">Add Row</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </section> -->
+                                <!-- tab section -->
+                                <section class="mt-3">
+                                    <div class="form-group case_billable_tab" id="case_bill_tab">
+                                        <div class="card m-b-30">
+                                            <div class="card-body m-t-30">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <h5>Choose rate</h5>
+                                                    </div>
+                                                    <div class="col-lg-6 ">
+                                                        <label>Choose Currency<span style="color:red;">*</span></label>
+                                                        <select id="dependent_list4" class="form-control">
+                                                            <option>USD($) </option>
+                                                            <option>Euro(€)</option>
+                                                            <option>GBP(£)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <ul class="tab-nav nav nav-tabs mt-3" id="myTab" role="tablist">
+                                                    <li class="nav-item ">
+                                                        <a class="nav-link active" id="hourly-tab-z" data-toggle="tab"
+                                                            href="#hourly-rate" role="tab" aria-controls="hourly"
+                                                            aria-selected="true">Hourly Rate</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="flat-rate-tab-z" data-toggle="tab"
+                                                            href="#flat-rate" role="tab" aria-controls="flat-rate"
+                                                            aria-selected="false">Flat Rate</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="contingency-fee-tab-z" data-toggle="tab"
+                                                            href="#contingency-fee" role="tab"
+                                                            aria-controls="contingency-fee"
+                                                            aria-selected="false">Contingency Fee</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content" id="myTabContent1">
+                                                    <div class="tab-pane fade active show" id="hourly-rate" role="tabpanel"
+                                                        aria-labelledby="hourly-tab">
+                                                        <section>
+                                                            <div class=" mt-3">
+                                                                <div class="row clearfix">
+                                                                    <div class="col-md-12">
+                                                                        <table
+                                                                            class="table table-responsive table-bordered table-hover"
+                                                                            id="tab_logic">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th width="25%"
+                                                                                        class="text-dark text-center"
+                                                                                        scope="col">Description</th>
+                                                                                    <th width="25%"
+                                                                                        class="text-dark text-center"
+                                                                                        scope="col">Number of Hours</th>
+                                                                                    <th width="25%"
+                                                                                        class="text-dark text-center"
+                                                                                        scope="col">Rate per Hour</th>
+                                                                                    <th width="25%"
+                                                                                        class="text-dark text-center"> Total
+                                                                                    </th>
+                                                                                    <th class="text-dark" scope="col"></th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody id='hourly-rate-content'>
+                                                                                <tr id="hourly">
+                                                                                    <td><input type="text" name='product[]'
+                                                                                        placeholder='Description'
+                                                                                        class="form-control" /></td>
+                                                                                    <td><input type="number" name='qty[]' placeholder='Hours' class="form-control qty" step="0" min="0"/>
+                                                                                    <td><input type="number" name='price[]' placeholder='Rate per Hours' class="form-control price" step="0.00" min="0"/></td>
+                                                                                    <td><input type="number" name='total[]' placeholder='0.00' class="form-control total" readonly/></td>
+                                                                                    <td><i style="font-size: 25px; "
+                                                                                        class="icon-placeholder mdi mdi-minus-box-outline delete_row"></i>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <!-- <tr id='addr1'></tr>  -->
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="flat-rate" role="tabpanel"
+                                                        aria-labelledby="flat-rate-tab">
+                                                        <p class="p-t-20 m-b-5"><b>Total Fee:</b></p>
+                                                        <section>
+                                                            <div class=" mt-3">
+                                                                <div class="row clearfix">
+                                                                    <div class="col-md-12">
+                                                                        <table
+                                                                            class="table table-responsive table-bordered table-hover"
+                                                                            id="tab_logic">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th width="40%"
+                                                                                        class="text-dark text-center"
+                                                                                        scope="col">Description</th>
+                                                                                    <th width="30%"
+                                                                                        class="text-dark text-center"
+                                                                                        scope="col">Flat Rate</th>
+                                                                                    <th width="30%"
+                                                                                        class="text-dark text-center"> Total
+                                                                                    </th>
+                                                                                    <th class="text-dark" scope="col"></th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody id='flat-rate-content'>
+                                                                                <tr>
+                                                                                    <td><input type="text" name='product[]'
+                                                                                        placeholder='Description'
+                                                                                        class="form-control" /></td>
+                                                                                    <td><input type="number" name='price[]'
+                                                                                        placeholder='Flat Rate'
+                                                                                        class="form-control price"
+                                                                                        step="0.00" min="0" /></td>
+                                                                                    <td><input type="number" name='total[]'
+                                                                                        placeholder='0.00'
+                                                                                        class="form-control total"
+                                                                                        readonly /></td>
+                                                                                    <td><i style="font-size: 25px;"
+                                                                                        class="icon-placeholder mdi mdi-minus-box-outline delete_row"></i>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div class="row clearfix">
+                                                                    <div class="col-md-12">
+                                                                        <button id="add_row3"
+                                                                            class="btn btn-default pull-left">Add
+                                                                        Row</button>
+                                                                    </div>
+                                                                </div> -->
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="contingency-fee" role="tabpanel"
+                                                        aria-labelledby="contingency-fee">
+                                                        <p class="p-t-20 m-b-5"><b>Contingency Fee (No win / No Fee): </b>
+                                                        </p>
+                                                        <section>
+                                                            <div class=" mt-3">
+                                                                <div class="row clearfix">
+                                                                    <div class="col-md-12">
+                                                                        <table
+                                                                            class="table table-responsive table-bordered table-hover"
+                                                                            id="tab_logic">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th width="25%"
+                                                                                        class="text-dark text-center"
+                                                                                        scope="col">Description</th>
+                                                                                    <th width="25%"
+                                                                                        class="text-dark text-center"
+                                                                                        scope="col">Win Amount</th>
+                                                                                    <th width="25%"
+                                                                                        class="text-dark text-center"
+                                                                                        scope="col">Rate</th>
+                                                                                    <th width="25%"
+                                                                                        class="text-dark text-center"> Total
+                                                                                    </th>
+                                                                                    <th class="text-dark" scope="col"></th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody id='contingency-fee-content'>
+                                                                                <tr id="contingency">
+                                                                                    <td><input type="text" name='product[]'
+                                                                                        placeholder='Description'
+                                                                                        class="form-control" /></td>
+                                                                                    <td><input type="number" name='qty[]' placeholder='Win Amount' class="form-control qty" step="0" min="0"/>
+                                                                                        </th>
+                                                                                    <td><input type="number" name='price[]' placeholder='Rate' class="form-control price" step="0.00" min="0"/></td>
+                                                                                    <td><input type="number" name='total[]' placeholder='0.00' class="form-control total" readonly/></td>
+                                                                                    <td><i style="font-size: 25px; "
+                                                                                        class="icon-placeholder mdi mdi-minus-box-outline delete_row"></i>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr id='addr1'></tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div class="row clearfix">
+                                                                    <div class="col-md-12">
+                                                                        <button id="add_row4"
+                                                                            class="btn btn-default pull-left">Add
+                                                                        Row</button>
+                                                                    </div>
+                                                                </div> -->
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                        <div class="col-md-12">
+                                                            <button id="add_row"
+                                                                class="btn btn-default pull-left">Add Row</button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- tab section -->
+                                <section>
+                                    <div class="mt-3">
+                                        <div class="row">
+                                            <div class="col-lg-6"></div>
+                                            <div class=" col-lg-6">
+                                                <div class="row clearfix">
+                                                    <div class="pull-right ">
+                                                        <table class="table  table-hover" id="tab_logic_total">
+                                                            <div class="row clearfix pb-3">
+                                                                <div class="col-md-12">
+                                                                    <button id="add"
+                                                                        class="btn btn-default pull-left add_tax">Add
+                                                                    Tax</button>
+                                                                </div>
+                                                            </div>
+                                                            <tbody id ="addtax">
+                                                               
+                                                            </tbody>
+                                                        </table>
+                                                        <table  class="table  table-hover" id="tab_logic_total">
+                                                            <tbody id='add_tax'>
+                                                            <tr class="sub_total">
+                                                                <th class="text-center">Sub Total</th>
+                                                                <td class="text-center"><input type="number" name='sub_total' placeholder='0.00' class="form-control sub" id="sub_total" readonly/>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="total_tax">
+                                                                <th class="text-center">Total Tax  </th>
+                                                                <td class="text-center"><input type="number" name='tax_amount' id="tax_amount" placeholder='0.00' class="form-control" readonly/></td>
+                                                            </tr>
+                                                            <tr class="Grand_total">
+                                                                <th class="text-center">Grand Total</th>
+                                                                <td class="text-center"><input type="number" name='total_amount' id="Grand_total" placeholdertax='0.00' class="form-control" readonly/></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="row mt-3">
+                                        <div class="col-lg-12 ">
+                                            <div>
+                                                <div class="row clearfix">
+                                                    <div class="col-md-12">
+                                                        <table class="table table-responsive table-bordered table-hover"
+                                                            id="tab_logic">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width='100%' class="text-dark " scope="col">Terms & Conditions
+                                                                    </th>
+                                                                    <th class="text-dark" scope="col"></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id='addr01'>
+                                                                <tr id='addr01'>
+                                                                    <td><input type="text" name='product[]'
+                                                                        placeholder='Terms'
+                                                                        class="form-control" /></td>
+                                                                    <td><i style="font-size: 25px; "
+                                                                        class="icon-placeholder mdi mdi-minus-box-outline delete_row"></i>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr id='addr1'></tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <div class="col-md-12">
+                                                        <button id="add_row2" class="btn btn-default pull-left">Add
+                                                        Row</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-3">
+                                                <label for="exampleFormControlTextarea1">Notes</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                    rows="3"></textarea>
+                                            </div>
+                                            <div class="mt-3">
+                                                <div class="card invoice-card">
+                                                    <h5 class="m-b-0">
+                                                        Contact Details
+                                                    </h5>
+                                                    <div class="mt-2 ">
+                                                        <p> For any queries, reach out via email at<input
+                                                            class="col-3 border" type="name" class="form-control "
+                                                            id="exampleInputnumber1" placeholder="E-mail id"> or call on
+                                                            <input class="col-3 border" type="name" class="form-control"
+                                                                id="exampleInputnumber1" placeholder="phone number."> .
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="form-group text-center m-t-30">
+                                    <a href="#">
+                                    <button class="btn btn-primary submit_button">Submit</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="assets/vendor/jquery/jquery.min.js"></script>
+        <script src="assets/vendor/jquery-ui/jquery-ui.min.js"></script>
+        <script src="assets/vendor/popper/popper.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/vendor/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <!-- page specific scripts -->
+        <script src="assets/js/cn.js"></script>
+        <script src="assets/vendor/select2/js/select2.full.min.js"></script>
+        <script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+        <script>
+
+            $(document).ready(function () {
+            
+                //Note Date 
+                $("#note_date").datepicker(
+                    {
+                        todayHighlight: true,
+                        weekStart: 1,
+                        daysOfWeekHighlighted: [0, 6],
+                        calendarWeeks: false,
+                        clearBtn: true,
+                        autoclose: true,
+                    }
+                );
+            
+                // Task Priority Field
+                $(".case_step_two #task_priority").select2();
+            
+                // Link to Email Phome Field Multi Select
+                $("#link_to_email_phome").select2();
+            
+                // Auto Resize Textarea
+                textarea = document.querySelector(".autoExpand");
+                // textarea.addEventListener('input', autoResize, false); 
+            
+                function autoResize() {
+                    this.style.height = 'auto';
+                    this.style.height = this.scrollHeight + 'px';
+                }
+            
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                // Dependent List Seach bar option in Dropdown Menu
+                $("#dependent_list1").select2();
+                $("#dependent_list2").select2();
+                $("#dependent_list4").select2();
+            });
+        </script>
+    </body>
+</html>
